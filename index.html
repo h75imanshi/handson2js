@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Function Handson</title>
+</head>
+<body>
+    <h1>FUNCTION HANDSON</h1>
+    <h5> Question 1 Create one function with zero parameter having a console statement;
+
+    </h5>
+   <p> const square = function (number) 
+    {
+        return number * number;
+      };
+      
+      console.log(square(4))
+    </p>
+    <h4>Answer 1. 16 </h4>  
+
+    <hr>
+    <br>
+    <br>					
+<h5>
+ Question 2 Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"
+
+</h5>
+<p>Enter the First Number: <input id="first"></p>
+<p>Enter the Second Number: <input id="second"></p>
+<button onclick="add()">Add</button>
+<p>Sum = <input id="answer"></p>	
+<hr>
+<br>
+<br>					
+<h5>Qusetion 3 Create one arrow function</h5>
+<p>let greet = () => console.log('Hello');
+greet();
+</p>
+<h4>ANSWER 3 Hello</h4>
+<hr>	
+<br>
+					
+<h5> Question 4	"Print output: 
+var x = 21;
+var girl = function () {
+    console.log(x);
+    var x = 20;
+};
+girl ();"	
+</h5>
+<h4>Answer 4. undefined</h4>
+<hr><br>
+<br>
+<h5>			
+Question5	"Print output: 
+var x = 21;
+girl ();
+console.log(x)
+function girl() {
+    console.log(x);
+    var x = 20;
+};
+"	
+</h5>
+<h4>Answer 5. 21</h4>
+<hr>
+<br>
+<br>					
+<h5>
+ Question 6 "Print output
+
+var x = 21;
+a();
+b();
+
+  function a() {
+    
+   x = 20;
+  console.log(x);
+};
+ function b() {
+    
+    x = 40;
+   console.log(x);
+};"	
+</h5>
+<h4>Answer 6 . 20,40</h4>
+<hr>
+<br>
+<br>
+<h5>				
+Question 7.	Write a function that accepts parameter n and returns factorial of n					
+</h5>
+<p>
+    const factorial = function fac(n) {
+        return n < 2 ? 1 : n * fac(n - 1);
+      };
+      
+      console.log(factorial(4));
+</p>
+<h4>Answer 7. 24
+</h4>	
+<hr>
+<br>
+<h1>DAY 2</h1>			
+<h5>
+Question 8 "Guess the Output
+
+function FindSum(a, b){
+    return a + b;
+}
+
+function DisplayData(data, batch){
+    console.log(`i am from ${data} and My batch is EA${batch}`)
+}
+
+DisplayData(""PrepBytes"", FindSum(10, 9));"
+</h5>	
+<h4>
+    Answer 8. i am from PrepBytes and My batch is EA19
+</h4>				
+<hr>
+<br><br>					
+<h5>
+
+						
+Qusetion 9 ."Guess the output
+
+Abc();
+const Abc = function(){
+    let value = 20;
+    console.log(value);
+}"	
+</h5>
+<h4>
+    Answer. Error show
+</h4>
+<hr>
+<br>
+<br>
+
+<h5>						
+Qusetion 10."Guess the output
+
+var a = 10;
+(function (){
+    console.log(a);
+    var a = 20;
+})();"
+
+</h5>
+<h4>
+    Answer 10. undefined
+</h4>
+<hr>
+<br>
+<br>
+<h5>					
+						
+Qusetion 11. 	"Guess the Output
+const greet =  function(name){
+    return function(m){
+    
+        console.log(`Hi!! ${name}, ${m}`);
+    }
+}
+  
+const greet_message = greet('EA19');
+greet_message(""Welcome To PrepBytes"")"					
+    </h5>
+    <h4>
+        Answer 11. Hi!! EA19, Welcome To PrepBytes
+    </h4>
+    <hr>
+    <br>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
